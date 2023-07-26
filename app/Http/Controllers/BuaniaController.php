@@ -146,12 +146,10 @@ class BuaniaController extends Controller
         $response = Http::get($apiExterne.'equipes/detail/'.$id);
 
 
-       // dd($response);
         $accueil_data = $response->json();
         $currentLocale = App::getLocale();
 
 
-       //dd($accueil_data);
         return view('team-detail', [
             "currentLocale"=>$currentLocale,
             "avocat"=>$accueil_data['avocat'],
