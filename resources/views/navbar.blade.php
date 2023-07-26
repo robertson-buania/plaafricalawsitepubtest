@@ -82,6 +82,7 @@
                                             <div class="row">
                                                 <div class="col-lg-12">
 
+                                                    @if ($accueil_data )
                                                     <ul>
                                                         @foreach ($accueil_data['expertisesSecteuractivite'] as $activite )
 
@@ -98,6 +99,8 @@
                                                         </li>
                                                         @endforeach
                                                     </ul>
+                                                    @endif
+
                                                 </div>
                                             </div>
                                         </div>
@@ -110,7 +113,7 @@
                                         <div class="container">
                                             <div class="row">
                                                 <div class="col-lg-12">
-                                                   @if ($accueil_data['expertisesDomainecompetence'])
+                                                   @if ($accueil_data )
                                                     <ul>
                                                         @foreach ($accueil_data['expertisesDomainecompetence'] as $competence )
 
