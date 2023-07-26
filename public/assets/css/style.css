@@ -336,7 +336,7 @@ a{
 
   .ftco-section {
     padding: 7em 0;
-    background-image: url('https://www.plaafricalaw.com/assets/images/img/baner.jpg');
+    background-image: url('../img/baner.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
